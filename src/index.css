@@ -7,7 +7,107 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  text-align: center;
+  font-family: "Roboto", Roboto;
+}
+
+.main {
+  text-align: center;
+}
+
+.name {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #B18463;
+  width: 104px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.title {
+
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #B18463;
+
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #272727;
+  max-width: 48rem;
+  margin: auto
+}
+
+.images {
+  width: 100%;
+  height: 516px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding:1rem;
+  justify-content: end;
+  background: linear-gradient(360deg, #1A1A1A 0%, rgba(26, 26, 26, 0) 38.16%);
+
+}
+
+.namespan {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.nametitle {
+  font-family: Roboto;
+  font-size: 24px;
+  position: relative;
+  top: 3rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+
+.profilebutton {
+  width: 185px;
+  height: 34px;
+  padding: 4px 12px 4px 12px;
+  border-radius: 100px;
+  border: 1px;
+  gap: 8px;
+  border: 1px solid #B18463
+}
+
+.grid {
+  padding-top: 2rem;
+  margin: 0 1rem;
+  max-width: 983px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  row-gap: 2rem;
+  column-gap: 54px;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .images {
+    width: 90%;
+    margin: auto;
+  }
 }
